@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 70%;
+  padding: 0 3rem;
+}
+
+.table {
+  border-collapse: collapse;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.5rem;
+  overflow: scroll;
+
+  width: 80%;
+}
+
+.table thead th {
+  background-color: #087f5b;
+  color: #e6fcf5;
+}
+
+.table td,
+.table th {
+  padding: 2rem 4rem;
+
+  height: 5rem;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #087f5b;
+}
+
+aside {
+  width: 30%;
+  padding: 1.5rem;
+  margin-right: 1rem;
+  float: right;
+  /* font-style: italic; */
+  /* background-color: lightgray; */
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.convertCurrency {
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form__label {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form__btn:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.submitBtn {
+  grid-column: 1 / -1;
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem;
+}
