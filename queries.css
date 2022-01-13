@@ -1,0 +1,34 @@
+/******************************/
+/*  Below 552px (34.5em) Mobile Phones */
+/******************************/
+
+@media (max-width: 34.5em) {
+  .header {
+    padding: 3.2rem 0;
+  }
+
+  aside {
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto 2rem auto;
+    /* margin-bottom: 2rem; */
+  }
+
+  main {
+    width: 100%;
+    padding: 0 3rem;
+    margin-top: 3rem;
+  }
+
+  .table {
+    margin: 0 auto;
+  }
+
+  .form__input {
+    font-size: 1.2rem;
+  }
+
+  .form__label {
+    font-size: 0.9rem;
+  }
+}

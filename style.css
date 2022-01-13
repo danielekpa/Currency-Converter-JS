@@ -13,6 +13,22 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+aside {
+  width: 30%;
+  padding: 1.5rem;
+  margin-right: 1rem;
+  float: right;
+  /* font-style: italic; */
+  /* background-color: lightgray; */
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
 main {
   width: 70%;
   padding: 0 3rem;
@@ -25,7 +41,7 @@ main {
   font-size: 1.5rem;
   overflow: scroll;
 
-  width: 80%;
+  width: 90%;
 }
 
 .table thead th {
@@ -46,22 +62,6 @@ main {
 
 .table tbody tr:last-of-type {
   border-bottom: 2px solid #087f5b;
-}
-
-aside {
-  width: 30%;
-  padding: 1.5rem;
-  margin-right: 1rem;
-  float: right;
-  /* font-style: italic; */
-  /* background-color: lightgray; */
-}
-
-h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: #333;
 }
 
 .convertCurrency {
