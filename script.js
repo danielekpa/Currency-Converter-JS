@@ -21,12 +21,11 @@ async function getCurrencyData(url) {
   return fetch(url).then(res => res.json()).then(data => {
     // console.log(data);
     const currencyData = data.rates;
-    console.log(currencyData);
     loadTable(table, currencyData);
     // convert(event, currencyData);
 
     /// Convert currency btn listener
-    convertBtn.addEventListener('click', convert.bind(this, currencyData));
+    convertBtn.addEventListener('click', convert.bind(currencyData));
 
 
   }).catch(err => console.log(`Error Message -> ` + err));
@@ -75,12 +74,14 @@ getCurrencyData(url);
 }); */
 
 /// Conversion function
-function convert(currency) {
-  this.event.preventDefault();
+function convert(e) {
+  e.preventDefault();
   const amount = Number(sendAmount.value);
+  const rate = String(curDropDown.value);
+
   // const beneficiaryAcc = currencyData.userName === inputTransferTo.value);
   if (amount !== null && amount > 0) {
-    const value = amount * currency[curDropDown.value];
+    const value = amount * this[rate];
 
     receiveAmount.textContent = `${new Intl.NumberFormat(navigator.language, { style: 'currency', currency: `${curDropDown.value}` }).format(value)}`;
   }
