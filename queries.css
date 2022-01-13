@@ -31,4 +31,9 @@
   .form__label {
     font-size: 0.9rem;
   }
+
+  .convertCurrency {
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+  }
 }
