@@ -22,7 +22,6 @@ async function getCurrencyData(url) {
     // console.log(data);
     const currencyData = data.rates;
     loadTable(table, currencyData);
-    // convert(event, currencyData);
 
     /// Convert currency btn listener
     convertBtn.addEventListener('click', convert.bind(currencyData));
@@ -86,9 +85,6 @@ function convert(e) {
     receiveAmount.textContent = `${new Intl.NumberFormat(navigator.language, { style: 'currency', currency: `${curDropDown.value}` }).format(value)}`;
   }
 }
-
-
-
 
 
 

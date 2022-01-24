@@ -36,7 +36,7 @@ main {
 
 .table {
   border-collapse: collapse;
-  overflow: hidden;
+  overflow: scroll;
   font-weight: bold;
   font-size: 1.5rem;
   overflow: scroll;
@@ -54,6 +54,16 @@ main {
   padding: 2rem 4rem;
 
   height: 5rem;
+}
+
+.table tbody {
+  height: 100rem;
+  overflow-y: scroll;
+  display: block;
+}
+
+.table thead {
+  display:block; 
 }
 
 .table tbody tr:nth-child(even) {
